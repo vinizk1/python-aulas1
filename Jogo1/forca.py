@@ -1,4 +1,6 @@
-def jogar():
+import jogos
+
+def jogar_forca():
     palavra_secreta = "coração"
     letras_acertadas = ["_","_","_","_","_","_","_"]
     tentativas = 10
@@ -22,5 +24,7 @@ def jogar():
     else:
         print(f"Ai não, perdeu ein kkkkk, a palavra era {palavra_secreta}")
 
+    jogos.escolha_jogo()
+
 if(__name__ == "__main__"):
-    jogar()
+    jogar_forca()
